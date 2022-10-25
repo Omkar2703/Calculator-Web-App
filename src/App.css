@@ -3,7 +3,7 @@
 }
 body{
   margin: 0;
-  background: linear-gradient(to right, #10ff73, #1cb2fd);
+  background-color: black;
 }
 .calculator-grid{
   display: grid;
@@ -11,18 +11,18 @@ body{
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
   justify-content: center;
+  
 }
 .calculator-grid > button {
   cursor: pointer;
   font-size: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  border: 1px solid purple;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 3rem;
+  background-color: violet;
 }
-.calculator-grid > button:hover,
-.calculator-grid > button:focus {
-  background-color: white;
+.calculator-grid > button:hover{
+  background-color: purple;
+  color: white;
 }
 
 .span-two {
@@ -30,7 +30,7 @@ body{
 }
 .output {
   grid-column: 1/-1;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -38,16 +38,15 @@ body{
   padding: .75rem;
   word-wrap: break-word;
   word-break: break-all;
-  border-radius: 3rem;
   margin-bottom: 1rem;
 }
 
 .output .previous-operand {
-  color: white;
+  color: black;
   font-size: 1.5rem;
 }
 
 .output .current-operand {
-  color: white;
+  color: black;
   font-size: 2.5rem;
 }
